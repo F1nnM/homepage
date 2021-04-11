@@ -1,0 +1,8 @@
+.menu {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-transform: uppercase;
+    transform: rotate(-180deg);
+    font-size: 5vh;
+    font-weight: lighter;
+}
