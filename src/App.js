@@ -5,17 +5,19 @@ import Menu from './components/Menu';
 import Name from './components/Name';
 import Content from './components/Content';
 
+import 'intersection-observer'
+
 function App() {
   return (
     <Container fluid className={styles.app} >
-      <Row className="h-100">
-        <Col md="auto" className="h-100 d-flex text-center">
+      <Row className={styles.layoutRow + " h-100 m-0"}>
+        <Col md="auto" className={styles.col + " d-flex text-center"}>
           <Name />
         </Col>
-        <Col md="auto" className="h-100 d-flex">
+        <Col md="auto" className={styles.col + " d-flex flex-shrink-1"}>
           <Menu />
         </Col>
-        <Col>
+        <Col className={styles.col}>
           <Content/>
         </Col>
       </Row>

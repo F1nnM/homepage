@@ -1,5 +1,4 @@
 import styles from './About.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image } from 'react-bootstrap';
 
 import me from './../static/me.jpg'
@@ -14,7 +13,7 @@ function About() {
   }
 
   return (
-    <div className="d-flex flex-column justify-content-center">
+    <div className="d-flex flex-column justify-content-center pr-5">
       <Image src={me} roundedCircle className={styles.image + " mb-3 align-self-center"} />
       <h1 className={styles.header + " align-self-center"}>Hi there!</h1>
       <p className={styles.description}>

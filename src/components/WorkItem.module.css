@@ -1,0 +1,76 @@
+.card {
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    height: 60vh;
+    color: white;
+    background-color: #ffffff33; 
+    backdrop-filter: brightness(150%) blur(20px);
+}
+.image {
+    object-fit: cover;
+    object-position: left top;
+    height: 60vh;
+}
+.githubButton {
+    margin-right: 2vh !important;
+    background-color: black;
+    border-color: black;
+}
+.githubButton:hover {
+    background-color: #222222 !important;
+    border-color: #444444 !important;
+}
+.githubButton:focus {
+    background-color: #222222 !important;
+    border-color: #444444 !important;
+}
+.githubButton:active {
+    background-color: #444444 !important;
+    border-color: #555555 !important;
+}
+.title {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+}
+.description, .description button {
+    font-size: 2vh !important;
+}
+.description button svg {
+    font-size: 3vh;
+}
+.cardBody {
+    padding: 2vh;
+}
+.badge {
+    margin-right: 1vh;
+    padding: 1vh;
+    border-radius: .5vh;
+}
+.description p {
+    margin-bottom: 1vh;
+}
+.description button {
+    padding: 1vh 2vh;
+    border-radius: .5vh;
+    margin-bottom: 1vh !important;
+}
+.description button svg{ 
+    margin-right: 2vh !important;
+}
+@media (max-width: 1199px) {
+    .card {
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+        height: 80vh;
+    }
+    .image {
+        height: 30vh;
+    }
+}
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        height: 90vh;
+    }
+}

@@ -1,10 +1,9 @@
-import styles from './About.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Button, Form } from 'react-bootstrap';
 
 function Contact() {
   return (
-    <Form>
+    <Form className="d-flex flex-column justify-content-center pr-5">
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address for replies</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />

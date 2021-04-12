@@ -5,6 +5,20 @@
     transform: rotate(-180deg);
     font-size: 5vh;
     font-weight: lighter;
+    z-index: 999;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        writing-mode: initial;
+        text-orientation: initial;
+        transform: rotate(0);
+        height: unset;
+        flex-direction: row-reverse;
+        width: 100%;
+        font-size: 8vw;
+    }
 }
 
 .active {

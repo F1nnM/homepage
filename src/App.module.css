@@ -15,3 +15,14 @@
 .switchWrapper>div {
     position: absolute;
 }
+
+.app, .col {
+    padding-left: 1vh !important;
+    padding-right: 1vh !important;
+}
+
+@media (max-width: 767px) {
+    .layoutRow {
+        flex-direction: column;
+    }
+}
