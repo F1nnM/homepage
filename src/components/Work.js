@@ -7,6 +7,7 @@ import styles from './Work.module.css'
 import hyperviz from '../static/hyperviz.png'
 import studicar from '../static/studicar.png'
 import cah from '../static/cah.png'
+import website from '../static/website.png'
 
 function Work() {
 
@@ -60,6 +61,15 @@ function Work() {
       github: "https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone",
       languages: ["JS + Typescript", "CSS", "HTML"],
       technologies: ["React", "Node", "Colyseus"]
+    },
+    {
+      image: website,
+      title: "This website",
+      description: "Well.. It's this exact website.",
+      live: "https://mfinn.de/",
+      github: "https://github.com/F1nnM/homepage",
+      languages: ["JS", "CSS", "HTML"],
+      technologies: ["React"]
     }
   ]
 
