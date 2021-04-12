@@ -1,0 +1,8 @@
+.image {
+    width: 25vh;
+    border: 0.5vh solid white
+}
+.description {
+    font-weight: lighter;
+    font-size: larger;
+}

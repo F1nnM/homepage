@@ -3,19 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import Menu from './components/Menu';
 import Name from './components/Name';
+import Content from './components/Content';
 
 function App() {
   return (
     <Container fluid className={styles.app} >
       <Row className="h-100">
-        <Col className="h-100 d-flex text-center">
+        <Col md="auto" className="h-100 d-flex text-center">
           <Name />
         </Col>
-        <Col className="h-100 d-flex">
+        <Col md="auto" className="h-100 d-flex">
           <Menu />
         </Col>
         <Col>
-
+          <Content/>
         </Col>
       </Row>
 
