@@ -38,11 +38,11 @@ function Work() {
     {
       image: hyperviz,
       title: "HyperViz App",
-      description: "Determining the correct hyperparameters for a machine learning model is difficult. Gridsearch algorithms make this easier, but the data still has to be analyzed manually. This tool aims to make this as comfortable and easy as possible.",
+      description: "Determining the correct hyperparameters for a machine learning model is difficult. Gridsearch algorithms make this easier, but the generated data still has to be analyzed manually. This tool aims to make this as comfortable and easy as possible.",
       live: "https://hyperviz.mfinn.de/",
       github: "https://github.com/F1nnM/HyperViz",
-      languages: ["Python"],
-      technologies: ["Streamlit", "Hiplot", "SHAP", "XGBoost"]
+      languages: ["Python", "HTML"],
+      technologies: ["Streamlit", "Hiplot", "SHAP", "XGBoost", "Matplotlib"]
     },
     {
       image: studicar,
@@ -51,7 +51,7 @@ function Work() {
       live: "https:/dev.pwa.studicar.mfinn.de/",
       github: "https://github.com/F1nnM/Studicar",
       languages: ["JS", "CSS", "HTML"],
-      technologies: ["Vue.js", "Quasar", "Node", "MySQL"]
+      technologies: ["Vue.js", "Quasar (PWA)", "Node", "MySQL"]
     }, 
     {
       image: cah,
