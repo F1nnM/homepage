@@ -21,9 +21,8 @@ function Work() {
     const element = container.current;
     const snapElement = new ScrollSnap(element, {
       snapDestinationY: '100%',
-      threshold: 0.1,
-      snapStop: true,
-      duration: 100
+      threshold: 0.05,
+      duration: 300
     });
 
     snapElement.bind();
@@ -42,7 +41,7 @@ function Work() {
       live: "https://hyperviz.mfinn.de/",
       github: "https://github.com/F1nnM/HyperViz",
       languages: ["Python", "HTML"],
-      technologies: ["Streamlit", "Hiplot", "SHAP", "XGBoost", "Matplotlib"]
+      technologies: ["Kubernetes", "Docker", "Streamlit", "Hiplot", "SHAP", "XGBoost", "Matplotlib"]
     },
     {
       image: studicar,
