@@ -42,3 +42,12 @@
         margin: 2vh;
     }
 }
+
+.cardSizingContainer{
+    height: 100vh;
+}
+@media (max-width: 767px) {
+    .cardSizingContainer{
+        height: fit-content;
+    }
+}

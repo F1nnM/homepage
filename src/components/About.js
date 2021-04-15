@@ -13,7 +13,7 @@ function About() {
   }
 
   return (
-    <div className="d-flex flex-column justify-content-center pr-5">
+    <div className="d-flex flex-column justify-content-center">
       <Image src={me} roundedCircle className={styles.image + " mb-3 align-self-center"} />
       <h1 className={styles.header + " align-self-center"}>Hi there!</h1>
       <p className={styles.description}>

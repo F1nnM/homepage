@@ -14,7 +14,7 @@ function Work() {
   var container = React.createRef()
 
   useEffect(() => {
-    if (window.innerWidth < 768){
+    if (window.innerWidth < 768) {
       return
     }
 
@@ -51,15 +51,15 @@ function Work() {
       github: "https://github.com/F1nnM/Studicar",
       languages: ["JS", "CSS", "HTML"],
       technologies: ["Vue.js", "Quasar (PWA)", "Node", "MySQL"]
-    }, 
+    },
     {
       image: cah,
       title: "Cards against Humanity Clone",
-      description: "Cards against Humanity is a popular card game, and the websites offering that game had a lot of bugs or a complicated UI, so I set out to create simple yet complete, bug-free clone of the game to play with friends. I made it publicly available to also bring the joy of this game to others.",
+      description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Cards against Humanity is a popular card game, and the websites offering that game had a lot of bugs or a complicated UI, so I set out to create simple yet complete, bug-free clone of the game to play with friends. I made it publicly available to also bring the joy of this game to others.",
       live: "https://cah.mfinn.de/",
       github: "https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone",
       languages: ["JS + Typescript", "CSS", "HTML"],
-      technologies: ["React", "Node", "Colyseus"]
+      technologies: ["React", "Node", "Colyseus", "Docker"]
     },
     {
       image: website,
@@ -74,11 +74,11 @@ function Work() {
 
   var initVisiblePages = []
   works.forEach((_, i) => {
-      initVisiblePages.push(i===0)
+    initVisiblePages.push(i === 0)
   })
   const [visiblePages, setVisiblePages] = useState(initVisiblePages);
 
-  function setVisible(index, visible){
+  function setVisible(index, visible) {
     if (visiblePages[index] === visible)
       return
     let newVisiblePages = [...visiblePages];
@@ -90,17 +90,21 @@ function Work() {
 
   return (
     <div className={styles.container + " d-flex justify-content-between flex-row w-100"}>
-      <div className={styles.hideScrollbar + " flex-grow-1 d-flex flex-column h-100 overflow-auto"} ref={container}>
+      <div className={styles.hideScrollbar + " flex-grow-1 h-100 overflow-auto"} ref={container}>
         {
-          works.map((item,index) => {
-            return <WorkItem visibilityChanged={visible => setVisible(index, visible)} data={item} ref={item.ref}/>
+          works.map((item, index) => {
+            return (
+              <div className={styles.cardSizingContainer +" d-flex flex-column justify-content-center"}>
+                <WorkItem visibilityChanged={visible => setVisible(index, visible)} data={item} ref={item.ref} />
+              </div>
+            );
           })
         }
       </div>
       <div className="d-flex flex-column h-100 justify-content-center">
         {works.map((data, index) => {
           return (
-            <div className={styles.dot+ " d-block "+ (visiblePages[index]?styles.filled:'')}/>
+            <div className={styles.dot + " d-block " + (visiblePages[index] ? styles.filled : '')} />
           )
         })}
       </div>

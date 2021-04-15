@@ -15,7 +15,7 @@ function WorkItem({ data, visibilityChanged }) {
   return (
     <Card ref={ref} className={styles.card + " flex-shrink-0"}>
       <Row className='no-gutters h-100'>
-        <Col xl={6}>
+        <Col xl={6} className='d-flex'>
           <Card.Img className={styles.image} src={data.image} />
         </Col>
         <Col xl className={styles.description}>

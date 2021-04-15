@@ -3,8 +3,8 @@
     text-orientation: sideways;
     text-transform: uppercase;
     transform: rotate(-180deg);
-    font-size: 5vh;
-    font-weight: lighter;
+    font-size: min(5vh,8vw);
+    font-weight: 300;
     z-index: 999;
     height: 100%;
 }
@@ -17,10 +17,14 @@
         height: unset;
         flex-direction: row-reverse;
         width: 100%;
-        font-size: 8vw;
     }
 }
 
 .active {
     color: white;
+}
+
+.active:hover {
+    color: white;
+    text-decoration: none;
 }

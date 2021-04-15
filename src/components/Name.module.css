@@ -3,7 +3,7 @@
     text-orientation: sideways;
     text-transform: uppercase;
     transform: rotate(-180deg);
-    font-size: 14vh;
+    font-size: min(14vh,14vw);
     z-index: 999;
     height: 100%;
 }
@@ -15,6 +15,5 @@
         transform: rotate(0);
         height: unset;
         width: 100%;
-        font-size: 14vw;
     }
 }
