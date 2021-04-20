@@ -94,8 +94,8 @@ function Work() {
         {
           works.map((item, index) => {
             return (
-              <div className={styles.cardSizingContainer +" d-flex flex-column justify-content-center"}>
-                <WorkItem visibilityChanged={visible => setVisible(index, visible)} data={item} ref={item.ref} />
+              <div key={item.title} className={styles.cardSizingContainer +" d-flex flex-column justify-content-center"}>
+                <WorkItem visibilityChanged={visible => setVisible(index, visible)} data={item}/>
               </div>
             );
           })
@@ -104,7 +104,7 @@ function Work() {
       <div className="d-flex flex-column h-100 justify-content-center">
         {works.map((data, index) => {
           return (
-            <div className={styles.dot + " d-block " + (visiblePages[index] ? styles.filled : '')} />
+            <div key={data.title} className={styles.dot + " d-block " + (visiblePages[index] ? styles.filled : '')} />
           )
         })}
       </div>

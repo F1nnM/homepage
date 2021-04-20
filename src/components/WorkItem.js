@@ -27,7 +27,7 @@ function WorkItem({ data, visibilityChanged }) {
               {
                 data.languages.map(lang => {
                   return (
-                    <Badge variant="light" className={styles.badge}>{lang}</Badge>
+                    <Badge key={lang} variant="light" className={styles.badge}>{lang}</Badge>
                   );
                 })
               }
@@ -37,7 +37,7 @@ function WorkItem({ data, visibilityChanged }) {
               {
                 data.technologies.map(tech => {
                   return (
-                    <Badge variant="light" className={styles.badge}>{tech}</Badge>
+                    <Badge key={tech} variant="light" className={styles.badge}>{tech}</Badge>
                   );
                 })
               }
