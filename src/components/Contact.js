@@ -47,7 +47,7 @@ function Contact() {
 
       <Form.Group controlId="ControlTextarea1">
         <Form.Label>Your message</Form.Label>
-        <Form.Control as="textarea" rows={5} onChange={e => setMail(e.target.value)}/>
+        <Form.Control as="textarea" rows={5} onChange={e => setMessage(e.target.value)}/>
       </Form.Group>
       <Button variant="primary" onClick={send}>
         Submit
