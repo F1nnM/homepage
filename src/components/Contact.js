@@ -25,8 +25,10 @@ function Contact() {
     };
     fetch(url, options)
       .then((data) => {
-        console.log(data);
-        alert(data);
+        if(!data.ok)
+          throw "Non 200 return code!";
+        alert("Thank you for your message! I will get back to you soon!");
+        formRef.reset();
       })
       .catch((err) => {
         alert("Sorry, an error occurred. Something apparently broke. Please message me at web@mfinn.de.");
@@ -34,8 +36,10 @@ function Contact() {
       });
   }
 
+  var formRef;
+
   return (
-    <Form className={styles.form + " d-flex flex-column justify-content-center"}>
+    <Form className={styles.form + " d-flex flex-column justify-content-center"} ref={(el) => formRef = el}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Your name</Form.Label>
         <Form.Control type="email" placeholder="Enter email" onChange={e => setName(e.target.value)}/>
