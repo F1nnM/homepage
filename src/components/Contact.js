@@ -26,7 +26,7 @@ function Contact() {
     fetch(url, options)
       .then((data) => {
         if(!data.ok)
-          throw "Non 200 return code!";
+          throw new Error("Non 200 return code!");
         alert("Thank you for your message! I will get back to you soon!");
         formRef.reset();
       })
