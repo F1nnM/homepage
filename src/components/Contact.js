@@ -42,7 +42,7 @@ function Contact() {
     <Form className={styles.form + " d-flex flex-column justify-content-center"} ref={(el) => formRef = el}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Your name</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" onChange={e => setName(e.target.value)}/>
+        <Form.Control type="email" placeholder="Enter name" onChange={e => setName(e.target.value)}/>
       </Form.Group>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address for replies</Form.Label>
