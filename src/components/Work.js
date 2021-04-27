@@ -55,7 +55,7 @@ function Work() {
     {
       image: cah,
       title: "Cards against Humanity Clone",
-      description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Cards against Humanity is a popular card game, and the websites offering that game had a lot of bugs or a complicated UI, so I set out to create simple yet complete, bug-free clone of the game to play with friends. I made it publicly available to also bring the joy of this game to others.",
+      description: "Cards against Humanity is a popular card game, and the websites offering that game had a lot of bugs or a complicated UI, so I set out to create simple yet complete, bug-free clone of the game to play with friends. I made it publicly available to also bring the joy of this game to others.",
       live: "https://cah.mfinn.de/",
       github: "https://github.com/F1nnM/Yet-another-Cards-Against-Humanity-clone",
       languages: ["JS + Typescript", "CSS", "HTML"],
