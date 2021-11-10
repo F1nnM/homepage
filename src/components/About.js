@@ -6,7 +6,7 @@ import me from './../static/me.jpg'
 function About() {
 
   function calculateAge() {
-    var birthday = new Date("08-08-2001")
+    var birthday = new Date(2001,8,8)
     var ageDifMs = Date.now() - birthday;
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
