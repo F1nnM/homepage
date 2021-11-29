@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from './CV.module.css'
 
@@ -102,9 +103,15 @@ const data = [
 
 function CV() {
 
+  const downloadCv = () => {
+    let link = document.createElement("a"); //create 'a' element
+    link.setAttribute("href", "./FinnMelzerResume.pdf"); //replace "file" with link to file you want to download
+    link.setAttribute("download", "FinnMelzerResume.pdf");// replace "file" here too
+    link.click(); //virtually click <a> element to initiate download
+  }
 
   return (
-    <div className="d-flex flex-column overflow-auto h-100">
+    <div className="d-flex flex-column overflow-auto h-100 py-5">
       {data.map(section => (
         <section className=" mt-4">
           <h1>{section.title}</h1>
@@ -134,6 +141,10 @@ function CV() {
         <p>
           See <Link to="/work">Work</Link>.
         </p>
+      </section>
+      <section>
+        <h1>Download</h1>
+        <Button onClick={downloadCv}>Download CV as .pdf</Button>
       </section>
     </div>
   )
