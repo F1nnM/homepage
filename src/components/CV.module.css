@@ -14,5 +14,23 @@
 .skills{
   max-width: 90%;
 }
-.skillEntries {
+
+.scrollContainer::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.scrollContainer::-webkit-scrollbar-thumb {
+    background: #c1f1f03a;
+    border-radius: 5px;
+    
+}
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+    border-radius: 5px;
+    background: #c1f1f0;
+}
+.scrollContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scrollContainer::-webkit-resizer {
+    background-color: #4697ec;
 }

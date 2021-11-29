@@ -111,7 +111,7 @@ function CV() {
   }
 
   return (
-    <div className="d-flex flex-column overflow-auto h-100 py-5">
+    <div className={styles.scrollContainer + " d-flex flex-column overflow-auto h-100 py-5"}>
       {data.map(section => (
         <section className=" mt-4">
           <h1>{section.title}</h1>
@@ -129,7 +129,7 @@ function CV() {
           ) : (
             <ul className={styles.skills}>
               {section.entries.map(entry => (
-                <li className={styles.skillEntries}>{entry.description}</li>
+                <li>{entry.description}</li>
               ))}
             </ul>
           )}
