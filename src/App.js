@@ -14,10 +14,10 @@ function App() {
         <Col md="auto" className={styles.col + " d-flex text-center"}>
           <Name />
         </Col>
-        <Col md="auto" className={styles.col + " d-flex flex-shrink-1"}>
+        <Col md="auto" className={styles.col + " d-flex "}>
           <Menu />
         </Col>
-        <Col className={styles.col}>
+        <Col className={styles.col  + " d-flex d-flex-shrink"}>
           <Content/>
         </Col>
       </Row>

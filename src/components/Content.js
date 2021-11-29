@@ -1,6 +1,7 @@
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
+import CV from './CV';
 import { CSSTransitionGroup } from 'react-transition-group'
 import { Route, Switch, useLocation } from 'react-router';
 
@@ -35,6 +36,11 @@ function Content() {
         <Route path='/work'>
           <LayoutWrapper>
             <Work />
+          </LayoutWrapper>
+        </Route>
+        <Route path='/cv'>
+          <LayoutWrapper>
+            <CV />
           </LayoutWrapper>
         </Route>
         <Route path='/contact'>

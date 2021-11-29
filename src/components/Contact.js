@@ -25,7 +25,7 @@ function Contact() {
     };
     fetch(url, options)
       .then((data) => {
-        if(!data.ok)
+        if (!data.ok)
           throw new Error("Non 200 return code!");
         alert("Thank you for your message! I will get back to you soon!");
         formRef.reset();
@@ -42,20 +42,21 @@ function Contact() {
     <Form className={styles.form + " d-flex flex-column justify-content-center"} ref={(el) => formRef = el}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Your name</Form.Label>
-        <Form.Control type="email" placeholder="Enter name" onChange={e => setName(e.target.value)}/>
+        <Form.Control type="email" placeholder="Enter name" onChange={e => setName(e.target.value)} />
       </Form.Group>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address for replies</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" onChange={e => setMail(e.target.value)}/>
+        <Form.Control type="email" placeholder="Enter email" onChange={e => setMail(e.target.value)} />
       </Form.Group>
 
       <Form.Group controlId="ControlTextarea1">
         <Form.Label>Your message</Form.Label>
-        <Form.Control as="textarea" rows={5} onChange={e => setMessage(e.target.value)}/>
+        <Form.Control as="textarea" rows={5} onChange={e => setMessage(e.target.value)} />
       </Form.Group>
       <Button variant="primary" onClick={send}>
         Submit
       </Button>
+      <span className="mt-4">Or alternatively: <a href="mailto:contact@mfinn.de">contact@mfinn.de</a></span>
     </Form>
   );
 }

@@ -1,0 +1,18 @@
+.table {
+  table-layout: fixed;
+}
+.date{
+  float: right;
+  white-space: nowrap;
+}
+.date::after {
+  content: ':';
+}
+.description{
+  padding-left: 1vw;
+}
+.skills{
+  max-width: 90%;
+}
+.skillEntries {
+}

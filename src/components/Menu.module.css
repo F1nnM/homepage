@@ -3,7 +3,7 @@
     text-orientation: sideways;
     text-transform: uppercase;
     transform: rotate(-180deg);
-    font-size: min(5vh,8vw);
+    font-size: min(5vh,7vw);
     font-weight: 300;
     z-index: 999;
     height: 100%;

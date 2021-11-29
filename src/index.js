@@ -11,3 +11,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+document.getElementById('root').style.setProperty('--vh', `${window.innerHeight / 100}px`);
