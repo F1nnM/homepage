@@ -15,15 +15,17 @@ function WorkItem({ data, visibilityChanged }) {
   return (
     <Card ref={ref} className={styles.card + " flex-shrink-0"}>
       <Row className='no-gutters h-100'>
-        <Col xl={6} className='d-flex'>
-          <Card.Img className={styles.image} src={data.image} />
-        </Col>
+        {data.image && (
+          <Col xl={6} className='d-flex'>
+            <Card.Img className={styles.image} src={data.image} />
+          </Col>
+        )}
         <Col xl className={styles.description}>
           <Card.Body className={styles.cardBody + " h-100 d-flex flex-column justify-content-between"}>
             <Card.Title className={styles.title}>{data.title}</Card.Title>
             <Card.Text>{data.description}</Card.Text>
             <Card.Text>
-              Languages used:<br/>
+              Languages used:<br />
               {
                 data.languages.map(lang => {
                   return (
@@ -33,7 +35,7 @@ function WorkItem({ data, visibilityChanged }) {
               }
             </Card.Text>
             <Card.Text>
-              Technologies used:<br/>
+              Technologies used:<br />
               {
                 data.technologies.map(tech => {
                   return (
@@ -44,7 +46,7 @@ function WorkItem({ data, visibilityChanged }) {
             </Card.Text>
             <div className="flex-grow-1" />
             <div className="flex-grow-0">
-              <Button onClick={_ => window.open(data.github)} variant="dark" className={styles.githubButton}><GitHub/>View source</Button>
+              <Button onClick={_ => window.open(data.github)} variant="dark" className={styles.githubButton}><GitHub />View source</Button>
               <Button onClick={_ => window.open(data.live)} variant="primary"><CloudUpload />Live version</Button>
             </div>
           </Card.Body>

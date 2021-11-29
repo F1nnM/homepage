@@ -8,6 +8,7 @@ import hyperviz from '../static/hyperviz.png'
 import studicar from '../static/studicar.png'
 import cah from '../static/cah.png'
 import website from '../static/website.png'
+import gitdeploy from '../static/gitdeploy.png'
 
 function Work() {
 
@@ -35,8 +36,17 @@ function Work() {
 
   var works = [
     {
+      image: gitdeploy,
+      title: "GitDeploy",
+      description: "While there are many solutions for managing Docker containers there are none for smaller servers as easy as GitDeploy. The entire configuration is saved in a repository, and when a change is pushed, the server automatically updates to reflect the changes. Connecting a container to a (sub)domain is simple and all requests will automatically be encrypted with HTTPS. Templates for common applitions are planned.",
+      live: "https://the-gitdeploy.github.io/",
+      github: "https://github.com/The-GitDeploy",
+      languages: ["JS", "CSS", "HTML", "Shell"],
+      technologies: ["React.js", "Node", "Docker", "Git"]
+    },
+    {
       image: hyperviz,
-      title: "HyperViz App",
+      title: "HyperViz",
       description: "Determining the correct hyperparameters for a machine learning model is difficult. Gridsearch algorithms make this easier, but the generated data still has to be analyzed manually. This tool aims to make this as comfortable and easy as possible.",
       live: "https://hyperviz.mfinn.de/",
       github: "https://github.com/F1nnM/HyperViz",
