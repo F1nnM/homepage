@@ -18,7 +18,7 @@ const experiences = [
     time: "10/2019 - 10/2022",
     title: "B.Sc. Computer Science",
     company: "DHBW Heidenheim",
-    description: "Dual studies in the field of technical computer science with a focus on Data Science. Final grade: 1.5",
+    description: "Dual studies in the field of technical computer science with a focus on Data Science. Final grade: 1.5 (German scale: 1.0 (best) - 6.0 (worst))",
     companyLink: "https://www.dhbw-heidenheim.de/"
   },
   {
